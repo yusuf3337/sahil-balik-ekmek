@@ -1,7 +1,7 @@
 import React from "react";
 import type { Metadata } from "next";
 import Image from "next/image";
-import { Award, Users, Leaf, Sun } from "lucide-react";
+import { Award, Users, Leaf } from "lucide-react";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { AnimatedSection, StaggerContainer, StaggerItem } from "@/components/ui/AnimatedSection";
@@ -51,26 +51,20 @@ export default function HakkimizdaPage() {
       <Navbar />
 
       <main id="main-content" tabIndex={-1}>
-        {/* Bright High-Contrast Page Hero */}
+        {/* Page Hero */}
         <section
-          className="relative pt-36 pb-24 overflow-hidden bg-gradient-to-b from-[#073B5C] via-[#094d78] to-[#0284C7]"
+          className="relative pt-36 pb-24 overflow-hidden bg-[#073B5C]"
           aria-label="Sayfa başlığı"
         >
-          {/* Ambient Glow */}
-          <div
-            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-white/10 rounded-full blur-3xl pointer-events-none"
-            aria-hidden="true"
-          />
-
           <div className="container-custom relative z-10 text-center">
             <AnimatedSection direction="down">
-              <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-[#F97316] text-white text-xs font-bold uppercase tracking-widest mb-4 shadow-md">
-                <Sun className="w-3.5 h-3.5" /> Hikayemiz & Tutkumuz
+              <span className="text-[#E0F2FE] text-xs font-bold uppercase tracking-widest mb-3 block">
+                Hikayemiz & Tutkumuz
               </span>
-              <h1 className="font-serif font-extrabold text-white text-5xl sm:text-7xl mb-4 tracking-tight drop-shadow-lg">
+              <h1 className="font-serif font-bold text-white text-4xl sm:text-6xl mb-4 tracking-tight drop-shadow-sm">
                 Hakkımızda
               </h1>
-              <p className="text-white text-lg sm:text-xl max-w-xl mx-auto leading-relaxed font-semibold drop-shadow-md">
+              <p className="text-white text-base md:text-lg max-w-xl mx-auto leading-relaxed font-medium">
                 Dikili sahilinde denizin tam kıyısında taze Ege lezzetleri.
               </p>
             </AnimatedSection>
